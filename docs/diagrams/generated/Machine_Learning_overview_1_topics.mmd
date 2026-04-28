@@ -1,0 +1,36 @@
+%%{init: {'theme': 'base', 'themeVariables': {
+  'primaryColor': '#E040FB',
+  'primaryTextColor': '#1a0030',
+  'primaryBorderColor': '#1a0030',
+  'lineColor': '#555',
+  'secondaryColor': '#D1C4E9',
+  'tertiaryColor': '#EDE7F6',
+  'background': '#ffffff',
+  'fontFamily': 'Arial, sans-serif'
+}}}%%
+flowchart TD
+    ROOT["Machine Learning"]
+    classDef rootStyle fill:#E040FB,stroke:#1a0030,stroke-width:3px,color:#1a0030,font-weight:bold;
+    classDef level2   fill:#D1C4E9,stroke:#7B1FA2,stroke-width:2px,color:#1a0030;
+    classDef level3   fill:#EDE7F6,stroke:#9C27B0,stroke-width:1.5px,color:#1a0030;
+    class ROOT rootStyle;
+    ROOT --> SL["Supervised Learning"]
+    class SL level2;
+    SL --> SL1["Regression"]
+    class SL1 level3;
+    SL1 --> SL1T1["Linear Regression"]
+    class SL1T1 level3;
+    SL1 --> SL1T2["Polynomial Regression"]
+    class SL1T2 level3;
+    SL --> SL2["Classification"]
+    class SL2 level3;
+    SL2 --> SL2T1["Binary Classification"]
+    class SL2T1 level3;
+    SL2 --> SL2T2["Multi-class Classification"]
+    class SL2T2 level3;
+    SL --> SL3["Evaluation"]
+    class SL3 level3;
+    SL3 --> SL3T1["Confusion Matrix"]
+    class SL3T1 level3;
+    SL3 --> SL3T2["ROC Curve"]
+    class SL3T2 level3;

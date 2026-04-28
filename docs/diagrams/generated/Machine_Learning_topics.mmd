@@ -1,0 +1,38 @@
+%%{init: {'theme': 'base', 'themeVariables': {
+  'primaryColor': '#E040FB',
+  'primaryTextColor': '#1a0030',
+  'primaryBorderColor': '#1a0030',
+  'lineColor': '#555',
+  'secondaryColor': '#D1C4E9',
+  'tertiaryColor': '#EDE7F6',
+  'background': '#ffffff',
+  'fontFamily': 'Arial, sans-serif'
+}}}%%
+flowchart TD
+    ROOT["Machine Learning"]
+    classDef rootStyle fill:#E040FB,stroke:#1a0030,stroke-width:3px,color:#1a0030,font-weight:bold;
+    classDef level2   fill:#D1C4E9,stroke:#7B1FA2,stroke-width:2px,color:#1a0030;
+    classDef level3   fill:#EDE7F6,stroke:#9C27B0,stroke-width:1.5px,color:#1a0030;
+    class ROOT rootStyle;
+    ROOT --> SL["Supervised Learning"]
+    class SL level2;
+    SL --> RL["Regression"]
+    class RL level3;
+    RL --> LR["Linear Regression"]
+    class LR level3;
+    RL --> PR["Polynomial Regression"]
+    class PR level3;
+    SL --> CL["Classification"]
+    class CL level3;
+    CL --> SVC["Support Vector Class"]
+    class SVC level3;
+    CL --> DT["Decision Trees"]
+    class DT level3;
+    CL --> RF["Random Forests"]
+    class RF level3;
+    SL --> EL["Evaluation Techniques"]
+    class EL level3;
+    EL --> MAE["Mean Absolute Error"]
+    class MAE level3;
+    EL --> RMSE["Root Mean Squared Error"]
+    class RMSE level3;

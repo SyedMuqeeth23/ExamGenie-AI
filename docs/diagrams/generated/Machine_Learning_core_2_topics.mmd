@@ -1,0 +1,34 @@
+%%{init: {'theme': 'base', 'themeVariables': {
+  'primaryColor': '#E040FB',
+  'primaryTextColor': '#1a0030',
+  'primaryBorderColor': '#1a0030',
+  'lineColor': '#555',
+  'secondaryColor': '#D1C4E9',
+  'tertiaryColor': '#EDE7F6',
+  'background': '#ffffff',
+  'fontFamily': 'Arial, sans-serif'
+}}}%%
+flowchart TD
+    ROOT["Machine Learning - Core Concepts"]
+    classDef rootStyle fill:#E040FB,stroke:#1a0030,stroke-width:3px,color:#1a0030,font-weight:bold;
+    classDef level2   fill:#D1C4E9,stroke:#7B1FA2,stroke-width:2px,color:#1a0030;
+    classDef level3   fill:#EDE7F6,stroke:#9C27B0,stroke-width:1.5px,color:#1a0030;
+    class ROOT rootStyle;
+    ROOT --> SL["Supervised Learning"]
+    class SL level2;
+    SL --> SLT1["Regression"]
+    class SLT1 level3;
+    SL --> SLT2["Classification"]
+    class SLT2 level3;
+    SL --> SLT3["Training Data"]
+    class SLT3 level3;
+    SL --> SLT4["Validation"]
+    class SLT4 level3;
+    SLT2 --> SLT2_1["Binary Classification"]
+    class SLT2_1 level3;
+    SLT2 --> SLT2_2["Multi-Class Classification"]
+    class SLT2_2 level3;
+    SLT1 --> SLT1_1["Linear Regression"]
+    class SLT1_1 level3;
+    SLT1 --> SLT1_2["Polynomial Regression"]
+    class SLT1_2 level3;

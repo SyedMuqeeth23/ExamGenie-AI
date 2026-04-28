@@ -1,0 +1,17 @@
+flowchart LR
+    U[Student / User] --> S[Streamlit UI app.py]
+    S --> A1[Syllabus Agent]
+    S --> A2[Research Agent]
+    S --> A3[Notes Agent]
+    S --> A4[Importance Agent]
+    S --> A5[Question Agent]
+
+    A1 --> C[(LLM via LM Studio)]
+    A2 --> C
+    A3 --> C
+    A4 --> C
+    A5 --> C
+
+    S --> K[Data/knowledge.py]
+    S --> P[PDF Generator]
+    P --> O[(Generated PDF)]

@@ -1,0 +1,40 @@
+sequenceDiagram
+    participant User
+    participant UI as Streamlit app.py
+    participant Syllabus as syllabus_agent
+    participant Research as research_agent
+    participant Notes as notes_agent
+    participant Importance as importance_agent
+    participant Questions as question_agent
+    participant PDF as pdf_generator
+    participant LLM as LM Studio (OpenAI API)
+
+    User->>UI: Enter subject + topics + mode
+    UI->>Syllabus: analyze_syllabus(subject, units)
+    Syllabus->>LLM: prompt
+    LLM-->>Syllabus: topics
+    Syllabus-->>UI: topics
+
+    UI->>Research: research_topics(topics)
+    Research->>LLM: prompt
+    LLM-->>Research: context
+    Research-->>UI: context
+
+    UI->>Notes: generate_notes(context, mode)
+    Notes->>LLM: prompt
+    LLM-->>Notes: notes
+    Notes-->>UI: notes
+
+    UI->>Importance: predict_importance(topics)
+    Importance->>LLM: prompt
+    LLM-->>Importance: importance output
+    Importance-->>UI: importance
+
+    UI->>Questions: generate_questions(topics)
+    Questions->>LLM: prompt
+    LLM-->>Questions: questions
+    Questions-->>UI: questions
+
+    UI->>PDF: create_pdf(notes, importance, questions)
+    PDF-->>UI: PDF path
+    UI-->>User: Tabs + PDF download

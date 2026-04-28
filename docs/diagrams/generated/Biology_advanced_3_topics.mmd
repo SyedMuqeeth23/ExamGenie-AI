@@ -1,0 +1,40 @@
+%%{init: {'theme': 'base', 'themeVariables': {
+  'primaryColor': '#E040FB',
+  'primaryTextColor': '#1a0030',
+  'primaryBorderColor': '#1a0030',
+  'lineColor': '#555',
+  'secondaryColor': '#D1C4E9',
+  'tertiaryColor': '#EDE7F6',
+  'background': '#ffffff',
+  'fontFamily': 'Arial, sans-serif'
+}}}%%
+flowchart TD
+    ROOT["Biology - Advanced Topics"]
+    classDef rootStyle fill:#E040FB,stroke:#1a0030,stroke-width:3px,color:#1a0030,font-weight:bold;
+    classDef level2   fill:#D1C4E9,stroke:#7B1FA2,stroke-width:2px,color:#1a0030;
+    classDef level3   fill:#EDE7F6,stroke:#9C27B0,stroke-width:1.5px,color:#1a0030;
+    class ROOT rootStyle;
+    ROOT --> G1["Heart Anatomy"]
+    class G1 level2;
+    G1 --> G1T1["Chambers"]
+    class G1T1 level3;
+    G1 --> G1T2["Valves"]
+    class G1T2 level3;
+    G1 --> G1T3["Vessels"]
+    class G1T3 level3;
+    ROOT --> G2["Heart Physiology"]
+    class G2 level2;
+    G2 --> G2T1["Cardiac Cycle"]
+    class G2T1 level3;
+    G2 --> G2T2["Heart Sounds"]
+    class G2T2 level3;
+    G2 --> G2T3["Electrophysiology"]
+    class G2T3 level3;
+    ROOT --> G3["Circulatory System"]
+    class G3 level2;
+    G3 --> G3T1["Blood Flow"]
+    class G3T1 level3;
+    G3 --> G3T2["Oxygen Transport"]
+    class G3T2 level3;
+    G3 --> G3T3["Blood Pressure"]
+    class G3T3 level3;
