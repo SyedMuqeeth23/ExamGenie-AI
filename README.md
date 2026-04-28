@@ -17,7 +17,7 @@
 
 | | |
 |---|---|
-| 🚀 **Live App (Streamlit Cloud)** | [examgenie-ai.streamlit.app](https://examgenie-ai.streamlit.app) *(link coming soon)* |
+| 🚀 **Live App (Streamlit Cloud)** | [examgenie-ai.streamlit.app](https://examgenie-ai-muqeethomer.streamlit.app/) |
 | 💻 **GitHub Repository** | [github.com/SyedMuqeeth23/ExamGenie-Ai](https://github.com/SyedMuqeeth23/ExamGenie-Ai) |
 
 ---
