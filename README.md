@@ -73,9 +73,9 @@ Choose the intensity that matches your deadline:
 
 | Mode | When to Use | Output |
 |---|---|---|
-| ⚡ **Last-Minute Prep** | Hours before the exam | High-yield bullets & shortcuts (~900–1,200 words) |
-| 🌙 **Night Before the Exam** | The evening before | Clear coverage + examples + checklist (~1,500–2,000 words) |
-| 🔭 **Deep Focus** | Days in advance | In-depth explanations, comparisons & memory aids (~3,000–4,000 words) |
+| ⚡ **Last-Minute Prep** | Hours before the exam | High-yield bullets & shortcuts  |
+| 🌙 **Night Before the Exam** | The evening before | Clear coverage + examples + checklist  |
+| 🔭 **Deep Focus** | Days in advance | In-depth explanations, comparisons & memory aids  |
 
 ---
 
