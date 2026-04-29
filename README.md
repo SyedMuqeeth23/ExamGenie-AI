@@ -43,8 +43,6 @@ ExamGenie AI takes your subject and topics, and runs them through a **multi-agen
 
 </div>
 
-> 💡 To add more screenshots: place image files in `Image/` and reference them in the preview table.
-
 ---
 
 ## �🚀 Features
