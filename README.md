@@ -37,8 +37,8 @@ ExamGenie AI takes your subject and topics, and runs them through a **multi-agen
 | | |
 |:---:|:---:|
 | ![Home Screen](Image/Home.png) | ![Generated Notes](Image/AI-Generated%20Notes.png) |
-| **Home — Enter Subject & Topics** | **AI-Generated Notes** |
-| ![Notes](Image/PDF%20Export.png) |
+| **Home — Enter Subject & Topics** | **AI-Generated Notes** | |
+| ![Notes](Image/PDF%20Export.png) | |
 | **Notes Generation** |
 
 </div>
