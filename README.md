@@ -34,21 +34,16 @@ ExamGenie AI takes your subject and topics, and runs them through a **multi-agen
 
 <div align="center">
 
-<!-- Replace the src paths below with your actual screenshot files -->
-<!-- Recommended: save screenshots inside a /docs/screenshots/ folder -->
-
 | | |
 |:---:|:---:|
-| ![Home Screen](docs/screenshots/home.png) | ![Generated Notes](docs/screenshots/notes.png) |
+| ![Home Screen](Image/Home.png) | ![Generated Notes](Image/AI-Generated%20Notes.png) |
 | **Home — Enter Subject & Topics** | **AI-Generated Notes** |
-| ![Question Bank](docs/screenshots/questions.png) | ![Mind Map](docs/screenshots/mindmap.png) |
-| **Question Bank** | **Topic Mind Map** |
-| ![Importance Ranking](docs/screenshots/importance.png) | ![PDF Export](docs/screenshots/pdf.png) |
-| **Importance Ranking** | **PDF Export** |
+| ![PDF Export](Image/PDF%20Export.png) | |
+| **PDF Export** | |
 
 </div>
 
-> 💡 To add your screenshots: drop image files into `docs/screenshots/` and the table above will display them automatically.
+> 💡 To add more screenshots: place image files in `Image/` and reference them in the preview table.
 
 ---
 
@@ -130,6 +125,7 @@ ExamGenie-Ai/
 │   └── pdf_generator.py    # ReportLab PDF builder
 ├── Data/
 │   └── knowledge.py
+├── Image/                 # App screenshots used in README
 ├── docs/diagrams/          # Mermaid source & compiled diagram files
 └── scripts/
     └── compile_diagrams.sh
